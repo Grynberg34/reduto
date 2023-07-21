@@ -32,12 +32,12 @@
     .social__language {
         .social__language__link {
             font-size: 20px;
-            color: $azul-claro;
+            color: $bege;
             font-weight: 700;
             text-decoration: none;
 
             &:hover {
-                color: $bege;
+                color: $azul-claro;
             }
         }
 
@@ -50,7 +50,7 @@
         }
 
         .active {
-            color: $bege;
+            color: $azul-claro;
         }
     }
 }
