@@ -6,6 +6,7 @@ import "../scss/home.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Social from './Social';
 
 function App(props) {
 
@@ -23,6 +24,9 @@ function App(props) {
 
   return (
     <div id="home">
+
+      <Social></Social>
+
       <div className='menu'>
         <Link to="/"><img className='menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
       </div>

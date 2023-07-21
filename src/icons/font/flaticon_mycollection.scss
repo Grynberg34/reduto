@@ -1,0 +1,41 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.ttf?e3f41ec873228f2023f4bc620d026400") format("truetype"),
+url("./flaticon_mycollection.woff?e3f41ec873228f2023f4bc620d026400") format("woff"),
+url("./flaticon_mycollection.woff2?e3f41ec873228f2023f4bc620d026400") format("woff2"),
+url("./flaticon_mycollection.eot?e3f41ec873228f2023f4bc620d026400#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?e3f41ec873228f2023f4bc620d026400#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "facebook-app-symbol": "\f101",
+    "youtube": "\f102",
+    "social-media": "\f103",
+    "vimeo": "\f104",
+);
+
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon_mycollection-map, "facebook-app-symbol");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_mycollection-map, "youtube");
+}
+.flaticon-social-media:before {
+    content: map-get($flaticon_mycollection-map, "social-media");
+}
+.flaticon-vimeo:before {
+    content: map-get($flaticon_mycollection-map, "vimeo");
+}
