@@ -56,20 +56,13 @@
 }
 
 
-@media only screen and (min-width: 900px) and (max-width: 1300px) {
+@media only screen and (max-width:767px) {
 
-
-
-}
-
-@media only screen and (min-width: 1301px) and (max-width: 1500px) {
-
-
-
-}
-
-@media only screen and (min-width: 1501px) and (max-width: 1700px) {
-
-
-
+    .social {
+        top: 3%;
+        .social__link {
+            margin-right: 3.5vw;
+        }
+    
+    }
 }

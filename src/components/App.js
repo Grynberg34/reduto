@@ -20,9 +20,10 @@ function App(props) {
       </div>
     )
 
-  } else {
-
+  } else if (window.innerWidth > 768) {
+    console.log(window.innerWidth)
   return (
+    
     <div id="home">
 
       <Social></Social>
@@ -36,7 +37,7 @@ function App(props) {
             <Link to="/" className="area__link">Filmes realizados</Link>
           </Col>
           <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[1]}.jpg')`}}>
-          <Link to="/" className="area__link">Filmes em <br></br> desenvolvimento</Link>
+          <Link to="/" className="area__link">Projetos em <br></br> desenvolvimento</Link>
           </Col>
         </Row>
         <Row>
@@ -50,6 +51,38 @@ function App(props) {
       </Container>
     </div>
   )
+  } else {
+    console.log(window.innerWidth)
+
+    return (
+      <div id="home">
+
+          <Social></Social>
+
+          <div className='menu'>
+            <Link to="/"><img className='menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
+            <Link to="/" className="menu__link">Filmes <br/> realizados</Link>
+            <Link to="/" className="menu__link">Projetos em <br/> desenvolvimento</Link>
+            <Link to="/" className="menu__link">A Produtora</Link>
+            <Link to="/" className="menu__link">Contato</Link>
+          </div>
+        <Container fluid>
+          <Row>
+            <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[0]}.jpg')`}}>
+            </Col>
+            <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[1]}.jpg')`}}>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[2]}.jpg')`}}>
+
+            </Col>
+            <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[3]}.jpg')`}}>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    )
   }
 
 }
