@@ -7,7 +7,7 @@
     top: 2%;
     padding-left: 5vw;
     padding-right: 5vw;
-    z-index: 1;
+    z-index: 99;
 
     .social__link {
         display: inline-block;
@@ -19,7 +19,7 @@
     .social__icon {
         display: block;
         color: $bege;
-        font-size: 30px;
+        font-size: 20px;
         position: relative;
         z-index: 1;
 
@@ -31,7 +31,7 @@
 
     .social__language {
         .social__language__link {
-            font-size: 20px;
+            font-size: 14px;
             color: $bege;
             font-weight: 700;
             text-decoration: none;

@@ -1,0 +1,60 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+@import '../scss/animations.scss';
+
+.menu {
+    position: absolute;
+    top: 0%;
+    width: 10%;
+    left: 45%;
+
+    .menu__header {
+        position: relative;
+        z-index: 99;
+        
+        .menu__header__logo {
+            display: inline-block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            user-select: none;
+    
+        }
+    
+        .menu__header__icon {
+            position: absolute;
+            top: 50%;
+            color: $bege;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 99;
+        }
+    
+        .menu__header__icon--close {
+            position: absolute;
+            top: 50%;
+            color: $bege;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 99;
+        }
+    }
+
+    .menu__link {
+        display: block;
+        position: relative;
+        font-size: 14px;
+        color: $bege;
+        font-weight: 800;
+        margin-bottom: 2vw;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        user-select: none;
+        z-index: 99;
+
+        &:hover {
+            color: $azul-claro;
+        }
+    }
+}

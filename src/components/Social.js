@@ -28,7 +28,7 @@ function Social() {
       </Container>
     </div>
   )
-  }
+}
 
 
 export default Social

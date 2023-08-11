@@ -2,11 +2,11 @@ $flaticon_mycollection-font: "flaticon_mycollection";
 
 @font-face {
     font-family: $flaticon_mycollection-font;
-    src: url("./flaticon_mycollection.ttf?e3f41ec873228f2023f4bc620d026400") format("truetype"),
-url("./flaticon_mycollection.woff?e3f41ec873228f2023f4bc620d026400") format("woff"),
-url("./flaticon_mycollection.woff2?e3f41ec873228f2023f4bc620d026400") format("woff2"),
-url("./flaticon_mycollection.eot?e3f41ec873228f2023f4bc620d026400#iefix") format("embedded-opentype"),
-url("./flaticon_mycollection.svg?e3f41ec873228f2023f4bc620d026400#flaticon_mycollection") format("svg");
+    src: url("./flaticon_mycollection.ttf?48deedcd45f97046ea31ae1774852f96") format("truetype"),
+url("./flaticon_mycollection.woff?48deedcd45f97046ea31ae1774852f96") format("woff"),
+url("./flaticon_mycollection.woff2?48deedcd45f97046ea31ae1774852f96") format("woff2"),
+url("./flaticon_mycollection.eot?48deedcd45f97046ea31ae1774852f96#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?48deedcd45f97046ea31ae1774852f96#flaticon_mycollection") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -25,6 +25,8 @@ $flaticon_mycollection-map: (
     "youtube": "\f102",
     "social-media": "\f103",
     "vimeo": "\f104",
+    "menu-hand-drawn-lines-outlines": "\f105",
+    "cancel-hand-drawn-cross-in-square-button-outline": "\f106",
 );
 
 .flaticon-facebook-app-symbol:before {
@@ -38,4 +40,10 @@ $flaticon_mycollection-map: (
 }
 .flaticon-vimeo:before {
     content: map-get($flaticon_mycollection-map, "vimeo");
+}
+.flaticon-menu-hand-drawn-lines-outlines:before {
+    content: map-get($flaticon_mycollection-map, "menu-hand-drawn-lines-outlines");
+}
+.flaticon-cancel-hand-drawn-cross-in-square-button-outline:before {
+    content: map-get($flaticon_mycollection-map, "cancel-hand-drawn-cross-in-square-button-outline");
 }
