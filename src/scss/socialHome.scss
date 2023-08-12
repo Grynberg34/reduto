@@ -1,7 +1,7 @@
 @import '../scss/colors.scss';
 @import '../scss/font.scss';
 
-.social {
+.socialhome {
     position: absolute;
     width: 100%;
     top: 2%;
@@ -9,14 +9,14 @@
     padding-right: 5vw;
     z-index: 99;
 
-    .social__link {
+    .socialhome__link {
         display: inline-block;
         text-align: center;
         text-decoration: none;
         margin-right: 1vw;
     }
 
-    .social__icon {
+    .socialhome__icon {
         display: block;
         color: $bege;
         font-size: 20px;
@@ -29,10 +29,10 @@
 
     }
 
-    .social__language {
+    .socialhome__language {
         text-align: right;
 
-        .social__language__link {
+        .socialhome__language__link {
             font-size: 14px;
             color: $bege;
             font-weight: 700;
@@ -43,7 +43,7 @@
             }
         }
 
-        .social__language__text {
+        .socialhome__language__text {
             font-size: 20px;
             color: $bege;
             font-weight: 700;
@@ -60,13 +60,11 @@
 
 @media only screen and (max-width:767px) {
 
-    .social {
-        top: unset;
-        bottom: 2%;
-        .social__link {
+    .socialhome {
+        top: 3%;
+        .socialhome__link {
             margin-right: 3.5vw;
         }
     
     }
-
 }

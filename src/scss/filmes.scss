@@ -4,9 +4,7 @@
 
 #filmes {
     position: relative;
-    background-color: $cinza-escuro;
     overflow-x: hidden;
-    background-color: $azul-escuro;
     height: 100vh;
 }
 
@@ -26,7 +24,6 @@
             font-size: 30px;
             color: $bege;
             font-weight: 700;
-            margin-bottom: 2vw;
             text-decoration: none;
             text-align: center;
             text-transform: uppercase;
@@ -42,7 +39,6 @@
             font-size: 20px;
             color: $bege;
             font-weight: 400;
-            margin-bottom: 2vw;
             text-decoration: none;
             text-align: center;
             text-transform: uppercase;
@@ -51,6 +47,42 @@
     }
 }
 
-body {
-    background-color: $azul-escuro;
+@media only screen and (max-width:767px) {
+
+    .filmes {
+        .filmes__filme {
+            background-position: 50%;
+
+            .filmes__filme__title {
+                top: 48%;
+                width: 60%;
+                left: 20%;
+                font-size: 20px;
+            }
+
+            .filmes__filme__info {
+                top: 53%;
+                width: 60%;
+                left: 20%;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:375px) {
+    .filmes {
+        .filmes__filme {
+
+            .filmes__filme__title {
+                font-size: 18px;
+            }
+
+            .filmes__filme__info {
+                font-size: 12px;
+            }
+        }
+    }
+
 }

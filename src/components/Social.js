@@ -7,27 +7,53 @@ import Col from 'react-bootstrap/Col';
 
 function Social() {
 
-  return (
-    <div className="social">
-      <Container fluid>
-        <Row>
-          <Col xs={7} md={4}>
-            <Link to="" className="social__link"><i className=" social__icon flaticon-social-media"></i></Link>
-            <Link to="" className="social__link"><i className=" social__icon flaticon-facebook-app-symbol"></i></Link>
-            <Link to="" className="social__link"><i className=" social__icon flaticon-youtube"></i></Link>
-            <Link to="" className="social__link"><i className=" social__icon flaticon-vimeo"></i></Link>
-          </Col>
-          <Col xs={1} md={6}></Col>
-          <Col xs={4} md={2}>
-            <div className="social__language">
-              <Link className="social__language__link active" to="/">PT</Link> <span className="social__language__text">|</span> <Link className="social__language__link" to="/">EN</Link>
-            </div>
-          </Col>
+  if (window.innerWidth > 768) {
+    return (
+      <div className="social">
+        <Container fluid>
+          <Row>
+            <Col md={4}>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-social-media"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-facebook-app-symbol"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-youtube"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-vimeo"></i></Link>
+            </Col>
+            <Col md={6}></Col>
+            <Col md={2}>
+              <div className="social__language">
+                <Link className="social__language__link active" to="/">PT</Link> <span className="social__language__text">|</span> <Link className="social__language__link" to="/">EN</Link>
+              </div>
+            </Col>
+  
+          </Row>
+        </Container>
+      </div>
+    )
 
-        </Row>
-      </Container>
-    </div>
-  )
+  } else {
+    return (
+      <div className="social">
+        <Container fluid>
+          <Row>
+            <Col xs={7}>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-social-media"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-facebook-app-symbol"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-youtube"></i></Link>
+              <Link to="" className="social__link"><i className=" social__icon flaticon-vimeo"></i></Link>
+            </Col>
+            <Col xs={1}></Col>
+            <Col xs={4}>
+              <div className="social__language">
+                <Link className="social__language__link active" to="/">PT</Link> <span className="social__language__text">|</span> <Link className="social__language__link" to="/">EN</Link>
+              </div>
+            </Col>
+  
+          </Row>
+        </Container>
+      </div>
+    )
+  }
+
 }
 
 

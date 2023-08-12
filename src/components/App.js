@@ -6,7 +6,7 @@ import "../scss/home.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Social from './Social';
+import SocialHome from './SocialHome';
 
 function App(props) {
 
@@ -26,7 +26,7 @@ function App(props) {
     
     <div className="home" id="home">
 
-      <Social></Social>
+      <SocialHome></SocialHome>
 
       <div className='home__menu'>
         <Link to="/"><img className='home__menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
@@ -54,17 +54,17 @@ function App(props) {
   } else {
 
     return (
-      <div id="home">
+      <div className='home' id="home">
 
-          <Social></Social>
+        <SocialHome></SocialHome>
 
-          <div className='home__menu'>
-            <Link to="/"><img className='home__menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
-            <Link to="/filmes" className="home__menu__link">Filmes <br/> realizados</Link>
-            <Link to="/" className="home__menu__link">Projetos em <br/> desenvolvimento</Link>
-            <Link to="/" className="home__menu__link">A Produtora</Link>
-            <Link to="/" className="home__menu__link">Contato</Link>
-          </div>
+        <div className='home__menu'>
+          <Link to="/"><img className='home__menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
+          <Link to="/filmes" className="home__menu__link">Filmes <br/> realizados</Link>
+          <Link to="/" className="home__menu__link">Projetos em <br/> desenvolvimento</Link>
+          <Link to="/" className="home__menu__link">A Produtora</Link>
+          <Link to="/" className="home__menu__link">Contato</Link>
+        </div>
         <Container fluid>
           <Row>
             <Col className='area g-0' md={6} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url('/imagens/${numbers[0]}.jpg')`}}>
