@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "flaticon_mycollection";
-    src: url("./flaticon_mycollection.ttf?48deedcd45f97046ea31ae1774852f96") format("truetype"),
-url("./flaticon_mycollection.woff?48deedcd45f97046ea31ae1774852f96") format("woff"),
-url("./flaticon_mycollection.woff2?48deedcd45f97046ea31ae1774852f96") format("woff2"),
-url("./flaticon_mycollection.eot?48deedcd45f97046ea31ae1774852f96#iefix") format("embedded-opentype"),
-url("./flaticon_mycollection.svg?48deedcd45f97046ea31ae1774852f96#flaticon_mycollection") format("svg");
+    font-family: "flaticon_reduto";
+    src: url("./flaticon_reduto.ttf?c1d87d81437b8926f427487f616b13dc") format("truetype"),
+url("./flaticon_reduto.woff?c1d87d81437b8926f427487f616b13dc") format("woff"),
+url("./flaticon_reduto.woff2?c1d87d81437b8926f427487f616b13dc") format("woff2"),
+url("./flaticon_reduto.eot?c1d87d81437b8926f427487f616b13dc#iefix") format("embedded-opentype"),
+url("./flaticon_reduto.svg?c1d87d81437b8926f427487f616b13dc#flaticon_reduto") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: flaticon_mycollection !important;
+    font-family: flaticon_reduto !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -35,4 +35,13 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-cancel-hand-drawn-cross-in-square-button-outline:before {
     content: "\f106";
+}
+.flaticon-clock:before {
+    content: "\f107";
+}
+.flaticon-calendar:before {
+    content: "\f108";
+}
+.flaticon-clapperboard:before {
+    content: "\f109";
 }

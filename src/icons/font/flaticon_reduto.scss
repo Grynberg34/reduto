@@ -1,0 +1,61 @@
+$flaticon_reduto-font: "flaticon_reduto";
+
+@font-face {
+    font-family: $flaticon_reduto-font;
+    src: url("./flaticon_reduto.ttf?c1d87d81437b8926f427487f616b13dc") format("truetype"),
+url("./flaticon_reduto.woff?c1d87d81437b8926f427487f616b13dc") format("woff"),
+url("./flaticon_reduto.woff2?c1d87d81437b8926f427487f616b13dc") format("woff2"),
+url("./flaticon_reduto.eot?c1d87d81437b8926f427487f616b13dc#iefix") format("embedded-opentype"),
+url("./flaticon_reduto.svg?c1d87d81437b8926f427487f616b13dc#flaticon_reduto") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_reduto !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_reduto-map: (
+    "facebook-app-symbol": "\f101",
+    "youtube": "\f102",
+    "social-media": "\f103",
+    "vimeo": "\f104",
+    "menu-hand-drawn-lines-outlines": "\f105",
+    "cancel-hand-drawn-cross-in-square-button-outline": "\f106",
+    "clock": "\f107",
+    "calendar": "\f108",
+    "clapperboard": "\f109",
+);
+
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon_reduto-map, "facebook-app-symbol");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_reduto-map, "youtube");
+}
+.flaticon-social-media:before {
+    content: map-get($flaticon_reduto-map, "social-media");
+}
+.flaticon-vimeo:before {
+    content: map-get($flaticon_reduto-map, "vimeo");
+}
+.flaticon-menu-hand-drawn-lines-outlines:before {
+    content: map-get($flaticon_reduto-map, "menu-hand-drawn-lines-outlines");
+}
+.flaticon-cancel-hand-drawn-cross-in-square-button-outline:before {
+    content: map-get($flaticon_reduto-map, "cancel-hand-drawn-cross-in-square-button-outline");
+}
+.flaticon-clock:before {
+    content: map-get($flaticon_reduto-map, "clock");
+}
+.flaticon-calendar:before {
+    content: map-get($flaticon_reduto-map, "calendar");
+}
+.flaticon-clapperboard:before {
+    content: map-get($flaticon_reduto-map, "clapperboard");
+}

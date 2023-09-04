@@ -31,10 +31,12 @@ function Menu(props) {
           <Link to="/"><img className='menu__header__logo' src="/logo2.png" alt="" /></Link>
           <i onClick={openClose} className="flaticon-cancel-hand-drawn-cross-in-square-button-outline menu__header__icon--close"></i>
         </div>
-        <Link to="/filmes" className="menu__link">Filmes <br/> realizados</Link>
-        <Link to="/" className="menu__link">Projetos em <br/> desenvolvimento</Link>
-        <Link to="/" className="menu__link">A Produtora</Link>
-        <Link to="/" className="menu__link">Contato</Link>
+        <div className="menu__content">
+          <Link to="/filmes" className="menu__content__link">Filmes realizados</Link>
+          <Link to="/" className="menu__content__link">Projetos em desenvolvimento</Link>
+          <Link to="/" className="menu__content__link">A Produtora</Link>
+          <Link to="/" className="menu__content__link">Contato</Link>
+        </div>
       </div>
     )
   }

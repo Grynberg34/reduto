@@ -5,8 +5,8 @@
 .menu {
     position: absolute;
     top: 0%;
-    width: 10%;
-    left: 45%;
+    width: 10.5%;
+    left: 5%;
 
     .menu__header {
         position: relative;
@@ -25,7 +25,7 @@
             position: absolute;
             top: 50%;
             color: $bege;
-            font-size: 30px;
+            font-size: 26px;
             cursor: pointer;
             z-index: 99;
         }
@@ -40,21 +40,39 @@
         }
     }
 
-    .menu__link {
-        display: block;
+    .menu__content {
         position: relative;
-        font-size: 14px;
-        color: $bege;
-        font-weight: 800;
-        margin-bottom: 2vw;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-        user-select: none;
+        padding: 1vw;
+        background-color: $azul-claro;
         z-index: 99;
+        border: 3px solid $bege;
+        border-width: 4px 4px 4px 5px;
+        border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
 
-        &:hover {
-            color: $azul-claro;
+        .menu__content__link {
+            display: block;
+            position: relative;
+            font-size: 14px;
+            color: $bege;
+            font-weight: 800;
+            padding-bottom: 2vw;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            user-select: none;
+            z-index: 99;
+            
+            &:hover {
+                color: $azul-escuro;
+            }
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+
+            &:first-of-type {
+                padding-top: 0.5vw;
+            }
         }
     }
 }
@@ -72,6 +90,32 @@
 
             &:hover {
                 color: $bege;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1399px) {
+
+    .menu {
+
+        .menu__content {
+            .menu__content__link {
+                font-size: 10px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width:1400px) and (max-width:1700px) {
+
+    .menu {
+
+        .menu__content {
+            .menu__content__link {
+                font-size: 11px;
             }
         }
     }

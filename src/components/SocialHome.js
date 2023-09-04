@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../scss/socialHome.scss";
-import "../icons/font/flaticon_mycollection.css";
+import "../icons/font/flaticon_reduto.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../scss/social.scss";
-import "../icons/font/flaticon_mycollection.css";
+import "../icons/font/flaticon_reduto.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,13 +12,14 @@ function Social() {
       <div className="social">
         <Container fluid>
           <Row>
-            <Col md={4}>
+            <Col md={5}></Col>
+            <Col md={3}>
               <Link to="" className="social__link"><i className=" social__icon flaticon-social-media"></i></Link>
               <Link to="" className="social__link"><i className=" social__icon flaticon-facebook-app-symbol"></i></Link>
               <Link to="" className="social__link"><i className=" social__icon flaticon-youtube"></i></Link>
               <Link to="" className="social__link"><i className=" social__icon flaticon-vimeo"></i></Link>
             </Col>
-            <Col md={6}></Col>
+            <Col md={1}></Col>
             <Col md={2}>
               <div className="social__language">
                 <Link className="social__language__link active" to="/">PT</Link> <span className="social__language__text">|</span> <Link className="social__language__link" to="/">EN</Link>

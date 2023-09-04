@@ -3,7 +3,9 @@ import { store } from '../store';
 import { Link } from "react-router-dom";
 import { GetFilms } from '../actions';
 import "../scss/filmes.scss";
-import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Social from './Social';
 import Menu from './Menu';
 
@@ -26,24 +28,39 @@ function Filmes(props) {
   
         <Social></Social>
         <Menu></Menu>
-        
-        <Carousel indicators={false} interval={3000} autoPlay={true}>
 
-        { filmes.map( (filme) => 
 
-          <Carousel.Item key={filme.id}>
-            <Link to="">
-              <div className='filmes__filme' key={filme.id} style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68,0.8) 0%,rgba(29,45,68,0.8) 100%), url(${filme.imagem_capa})`}}>
-                <h1 className="filmes__filme__title">{filme.nome}</h1>
-                <h2 className="filmes__filme__info">{filme.ano} | {filme.duração}'</h2>
-              </div>
-            </Link>
-          </Carousel.Item>
+        <div className='filmes '>
 
-        )}
+        <Container fluid>
 
-        </Carousel>
+          <Row>
+
+            { filmes.map( (filme) => 
+
+              <Col className='' md={6} key={filme.id}>
+                <Link to="/">
+                
+                  <div className='filmes__filme'>
+                    <h1 className='filmes__filme__title'>{filme.nome}</h1>
+                    <video className='filmes__filme__video' autoPlay loop muted playsInline disableRemotePlayback  src={filme.video_capa}></video>
+                    <div className='filmes__filme__info'>
+                      <h2 className='filmes__filme__info__title'><i className='filmes_filme__info__icon flaticon-clock'></i> {filme.duração}'</h2>
+                      <h2 className='filmes__filme__info__title'><i className='filmes_filme__info__icon flaticon-calendar'></i> {filme.ano}</h2>
+                    </div>
+                  </div>
+                
+                </Link>
+              </Col>
+            )}  
+
+          </Row>
+
+        </Container>
+
   
+        </div>
+
       </div>
     )
 
