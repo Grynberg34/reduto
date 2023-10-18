@@ -29,3 +29,17 @@ export const GetFilms = () => async dispatch => {
   dispatch({ type: 'GET_FILMS', payload: filmes});
 
 };
+
+export const GetFilm = (uri) => async dispatch => {
+
+  var filme = filmes.find(x => x.uri === uri);
+
+  dispatch({ type: 'GET_FILM', payload: filme});
+
+};
+
+export const GetImgLink = (link) => async dispatch => {
+
+  dispatch({ type: 'GET_IMG_LINK', payload: link });
+
+};

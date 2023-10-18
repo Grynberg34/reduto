@@ -1,0 +1,154 @@
+import { connect } from 'react-redux';
+import { store } from '../store';
+import { GetFilm } from '../actions';
+import { GetImgLink } from '../actions';
+import { useParams } from "react-router-dom";
+import "../scss/filme.scss";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Social from './Social';
+import Menu from './Menu';
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
+
+function FilmeRealizado(props) {
+
+  var { id } = useParams();
+
+  var filme = props.filme;
+
+  var link = props.link;
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = (link) => {
+    store.dispatch(GetImgLink(link))
+    setShow(true)
+  };
+
+  if (filme === null || filme.uri !== id) {
+    store.dispatch(GetFilm(id))
+
+    return (
+      <div>
+      </div>
+    )
+
+  } else {
+
+    var ficha = Object.entries(filme.ficha_técnica);
+
+    return (
+      <div className='filme' id='filme' style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68, 0.8) 0%,rgba(29,45,68,0.8) 100%), url('${filme.imagem_capa}')`}}> 
+
+        <Social></Social>
+        <Menu></Menu>
+
+        <Container fluid>
+          <Row>
+            <Col md={5}>
+              <div className='filme__info'>
+                <h1 className='filme__info__title'>{filme.nome}</h1>
+                <h2 className='filme__info__subtitle'>Ano</h2>
+                <h2 className='filme__info__text'>{filme.ano}</h2>
+                <h2 className='filme__info__subtitle'>Duração</h2>
+                <h2 className='filme__info__text'>{filme.duração} minutos</h2>
+                <h2 className='filme__info__subtitle'>Estado</h2>
+                <h2 className='filme__info__text'>{filme.estado}</h2>
+                <h2 className='filme__info__subtitle'>Sinopse</h2>
+                <h2 className='filme__info__text'>{filme.sinopse}</h2>
+              </div>
+            </Col>
+
+            <Col md={1}></Col>
+            
+            <Col md={6}>
+              <div className='filme__content'>
+
+                <div className='filme__content__trailer'>
+                  <h3 className='filme__content__trailer__title'>Trailer</h3>
+                  <iframe className='filme__content__trailer__frame' src={`https://player.vimeo.com/video/${filme.trailer}`}
+                  allowFullScreen
+                  title='video'
+                  />
+                </div>
+
+                <div className='filme__content__ficha'>
+
+                  <h3 className='filme__content__ficha__title'>Ficha Técnica</h3>
+
+                  <ul className='filme__content__ficha__list'>
+
+                  { ficha.map( (item, index) => 
+
+                    <li className='filme__content__ficha__list__option' key={index}><span className='azul'>{item[0]}:</span> {item[1]}</li>
+
+                  )}
+
+                  </ul>
+
+                </div>
+
+                <div className='filme__content__festivais'>
+                  <h3 className='filme__content__festivais__title'>Festivais</h3>
+
+                    <ul className='filme__content__festivais__list'>
+
+                    { filme.festivais.map( (item, index) => 
+                      <li className='filme__content__festivais__list__option' key={index}>{item}</li>
+                    )}
+
+                    </ul>
+                </div>
+
+                <div className='filme__content__galeria'>
+                  <h3 className='filme__content__galeria__title'>Galeria</h3>
+
+                  <Container fluid className='filme__content__galeria__col'>
+                    <Row>
+                      { filme.galeria.map( (item, index) => 
+                        <Col md={4}>
+                          <img className='filme__content__galeria__img' src={item} alt="" onClick={() => handleShow(`${item}`)}/>
+                        </Col>
+                      )}
+                    </Row>
+                  </Container>
+
+
+
+                </div>
+
+              </div>
+            </Col>
+          </Row>
+        </Container>
+
+        <Modal show={show} onHide={handleClose} className="modal">
+          <img className='modal__img' src={link} alt="" />
+          <button className="modal__close" onClick={handleClose}>VOLTAR</button>
+        </Modal>
+
+
+      </div>
+    )
+
+  }
+
+
+
+}
+
+
+function mapStateToProps(state) {
+  return {
+    filme: state.filme,
+    link: state.link
+  }
+  
+}
+
+export default connect(
+  mapStateToProps
+)(FilmeRealizado);

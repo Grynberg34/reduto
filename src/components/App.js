@@ -21,7 +21,6 @@ function App(props) {
     )
 
   } else if (window.innerWidth > 768) {
-    console.log(window.innerWidth)
   return (
     
     <div className="home" id="home">

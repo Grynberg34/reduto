@@ -39,7 +39,7 @@ function Filmes(props) {
             { filmes.map( (filme) => 
 
               <Col className='' md={6} key={filme.id}>
-                <Link to="/">
+                <Link to={`/filmes/${filme.uri}`}>
                 
                   <div className='filmes__filme'>
                     <h1 className='filmes__filme__title'>{filme.nome}</h1>

@@ -80,9 +80,9 @@
 @media only screen and (max-width:767px) {
 
     .menu {
-        top: 2%;
-        width: 34%;
-        left: 33%;
+        top: 10%;
+        width: 40%;
+        left: 30%;
 
         .menu__link {
             font-size: 16px;
@@ -91,6 +91,20 @@
             &:hover {
                 color: $bege;
             }
+        }
+
+        .menu__content {
+            padding: 4vw;
+            width: 50vw;
+
+            .menu__content__link {
+                margin-bottom: 4vw;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
         }
     }
 

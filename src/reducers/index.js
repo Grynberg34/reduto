@@ -30,10 +30,32 @@ const getFilmsReducer = (filmes = null, action) => {
     return filmes;
 };
 
+const getFilmReducer = (filme = null, action) => {
+    if (action.type === 'GET_FILM') {
+
+        return action.payload;
+        
+    }
+
+    return filme;
+};
+
+const getImgLinkReducer = (link = null, action) => {
+    if (action.type === 'GET_IMG_LINK') {
+  
+      return action.payload;
+      
+    }
+    
+    return link;
+  };
+
 export default combineReducers({
 
     numbers: getNumbersReducer,
     open: openCloseMenuReducer,
-    filmes: getFilmsReducer
+    filmes: getFilmsReducer,
+    filme: getFilmReducer,
+    link: getImgLinkReducer
 
 });

@@ -37,7 +37,6 @@ a {
         .filmes__filme__video {
             position: relative;
             width: 100%;
-            border-radius: 95% 1% 92% 5%/4% 95% 6% 95%;
         }
 
         .filmes__filme__info {
@@ -61,6 +60,28 @@ a {
             }
         }
     }
+}
+
+@media only screen and (max-width:767px) {
+
+    .filmes {
+        padding-top: 40vw;
+        padding-bottom: 10vw;
+
+        .filmes__filme {
+            margin-bottom: 20vw;
+
+            .filmes__filme__title {
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+
+            .filmes__filme__info {
+                top: 20%;
+            }
+        }
+    }
+
 }
 
 
