@@ -20,7 +20,7 @@
         top: 4vw;
 
         .filme__info__title {
-            font-size: 50px;
+            font-size: 44px;
             color: $bege;
             font-weight: 700;
             text-transform: uppercase;
@@ -309,6 +309,62 @@ a {
 
 @media only screen and (min-width:768px) and (max-width:1399px) {
 
+    .filme {
+        .filme__info {
+            .filme__info__title {
+                font-size: 30px;
+            }
+
+            .filme__info__subtitle {
+                font-size: 20px;
+            }
+
+            .filme__info__text {
+                font-size: 14px;
+            }
+        }
+
+        .filme__content {
+
+            .filme__content__trailer {
+                .filme__content__trailer__title {
+                    font-size: 26px;
+                }
+            }
+
+            .filme__content__ficha {
+                .filme__content__ficha__title {
+                    font-size: 26px;
+                }
+
+                .filme__content__ficha__list {
+                    .filme__content__ficha__list__option {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .filme__content__festivais {
+                .filme__content__festivais__title {
+                    font-size: 26px;
+
+                }
+
+                .filme__content__festivais__list {
+                    .filme__content__festivais__list__option {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .filme__content__galeria {
+                .filme__content__galeria__title {
+                    font-size: 26px;
+                }
+            }
+
+        }
+    }
 
 
 }

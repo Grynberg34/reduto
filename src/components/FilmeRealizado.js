@@ -109,7 +109,7 @@ function FilmeRealizado(props) {
                   <Container fluid className='filme__content__galeria__col'>
                     <Row>
                       { filme.galeria.map( (item, index) => 
-                        <Col md={4}>
+                        <Col md={4} key={index}>
                           <img className='filme__content__galeria__img' src={item} alt="" onClick={() => handleShow(`${item}`)}/>
                         </Col>
                       )}
