@@ -6,7 +6,7 @@
     position: relative;
     overflow-x: hidden;
     height: 100vh;
-    background-color: $azul-escuro;
+    background-color: $preto;
 }
 
 .filme {
@@ -31,7 +31,7 @@
             font-size: 24px;
             text-transform: uppercase;
             font-weight: 700;
-            color: $azul-claro;
+            color: $cinza-claro;
             line-height: 2;
             margin-bottom: 0;
         }
@@ -53,7 +53,7 @@
         .filme__content__trailer {
             .filme__content__trailer__title {
                 font-size: 30px;
-                color: $azul-claro;
+                color: $cinza-claro;
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 2vw;
@@ -72,7 +72,7 @@
 
             .filme__content__ficha__title {
                 font-size: 30px;
-                color: $azul-claro;
+                color: $cinza-claro;
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 2vw;
@@ -98,7 +98,7 @@
 
             .filme__content__festivais__title {
                 font-size: 30px;
-                color: $azul-claro;
+                color: $cinza-claro;
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 2vw;
@@ -125,7 +125,7 @@
 
             .filme__content__galeria__title {
                 font-size: 30px;
-                color: $azul-claro;
+                color: $cinza-claro;
                 font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 2vw;
@@ -150,7 +150,8 @@ a {
 }
 
 .azul {
-    color: $azul-claro;
+    color: $cinza-claro;
+    font-weight: 700;
 }
 
 .modal {
@@ -160,16 +161,37 @@ a {
     }
 
     .modal__close {
+        display: block;
+        margin-top: 1vw;
+        margin-left: auto;
+        margin-right: auto;
         color: $bege;
         font-size: 20px;
         font-weight: 600;
         text-align: center;
         background: none;
         border: none;
-        margin-top: 1vw;
 
         &:hover {
-            color: $azul-claro;
+            color: $cinza-claro;
+        }
+    }
+
+    .modal__option {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: $cinza-claro;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background: none;
+        border: none;
+        margin-top: 1vw;
+        cursor: pointer;
+
+        &:hover {
+            color: $cinza-claro;
         }
     }
 }
@@ -210,6 +232,7 @@ a {
             }
 
             .filme__info__text {
+                font-size: 16px;
                 margin-bottom: 6vw;
             }
         }
@@ -243,6 +266,7 @@ a {
                     width: 100%;
     
                     .filme__content__ficha__list__option {
+                        font-size: 16px;
                         margin-bottom: 6vw;
                     }
                 }
@@ -259,6 +283,7 @@ a {
                     width: 100%;
     
                     .filme__content__festivais__list__option {
+                        font-size: 16px;
                         margin-bottom: 6vw;
                     }
                 }
@@ -290,12 +315,24 @@ a {
         }
     
         .modal__close {
-            margin-top: 4vw;
+            margin-top: 6vw;
+            font-size: 16px;
     
             &:hover {
-                color: $azul-claro;
+                color: $cinza-claro;
             }
         }
+
+        .modal__option {
+            margin-top: 6vw;
+            font-size: 16px;
+    
+            &:hover {
+                color: $cinza-claro;
+            }
+        }
+
+
     }
     
     .modal-content {

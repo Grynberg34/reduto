@@ -6,7 +6,7 @@
     position: relative;
     overflow-x: hidden;
     height: 100vh;
-    background-color: $azul-escuro;
+    background-color: $preto;
 }
 
 a {
@@ -16,14 +16,12 @@ a {
 
 .filmes {
     padding-top: 6vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 
     .filmes__filme {
         position: relative;
         margin-bottom: 4vw;
-        padding-left: 1vw;
-        padding-right: 1vw;
 
         .filmes__filme__title {
             font-size: 45px;
@@ -41,13 +39,12 @@ a {
 
         .filmes__filme__info {
             position: absolute;
-            top: 9%;
-            right: 2%;
-            padding: 1vw;
+            top: 10%;
+            right: 1%;
             padding-bottom: 0;
 
             .filmes__filme__info__title {
-                font-size: 18px;
+                font-size: 24px;
                 color: $bege;
                 font-weight: 700;
                 margin-bottom: 1vw;
@@ -78,6 +75,10 @@ a {
 
             .filmes__filme__info {
                 top: 20%;
+
+                .filmes__filme__info__title {
+                    font-size: 18px;
+                }
             }
         }
     }

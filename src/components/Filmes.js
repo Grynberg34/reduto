@@ -6,8 +6,8 @@ import "../scss/filmes.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Social from './Social';
 import Menu from './Menu';
+import MenuMobile from './MenuMobile';
 
 function Filmes(props) {
 
@@ -26,8 +26,8 @@ function Filmes(props) {
     return (
       <div className='filmes' id='filmes'>
   
-        <Social></Social>
         <Menu></Menu>
+        <MenuMobile></MenuMobile>
 
 
         <div className='filmes '>
@@ -45,8 +45,7 @@ function Filmes(props) {
                     <h1 className='filmes__filme__title'>{filme.nome}</h1>
                     <video className='filmes__filme__video' autoPlay loop muted playsInline disableRemotePlayback  src={filme.video_capa}></video>
                     <div className='filmes__filme__info'>
-                      <h2 className='filmes__filme__info__title'><i className='filmes_filme__info__icon flaticon-clock'></i> {filme.duração}'</h2>
-                      <h2 className='filmes__filme__info__title'><i className='filmes_filme__info__icon flaticon-calendar'></i> {filme.ano}</h2>
+                      <h2 className='filmes__filme__info__title'>{filme.ano}</h2>
                     </div>
                   </div>
                 

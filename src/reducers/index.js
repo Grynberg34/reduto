@@ -48,7 +48,17 @@ const getImgLinkReducer = (link = null, action) => {
     }
     
     return link;
-  };
+};
+
+const getImgIndexReducer = (index = null, action) => {
+    if (action.type === 'GET_IMG_INDEX') {
+  
+      return action.payload;
+      
+    }
+    
+    return index;
+};
 
 export default combineReducers({
 
@@ -56,6 +66,7 @@ export default combineReducers({
     open: openCloseMenuReducer,
     filmes: getFilmsReducer,
     filme: getFilmReducer,
-    link: getImgLinkReducer
+    link: getImgLinkReducer,
+    index: getImgIndexReducer
 
 });

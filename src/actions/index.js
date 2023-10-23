@@ -38,8 +38,9 @@ export const GetFilm = (uri) => async dispatch => {
 
 };
 
-export const GetImgLink = (link) => async dispatch => {
+export const GetImgLink = (link, index) => async dispatch => {
 
   dispatch({ type: 'GET_IMG_LINK', payload: link });
+  dispatch({ type: 'GET_IMG_INDEX', payload: index });
 
 };

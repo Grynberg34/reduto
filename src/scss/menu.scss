@@ -1,137 +1,97 @@
 @import '../scss/colors.scss';
 @import '../scss/font.scss';
-@import '../scss/animations.scss';
 
 .menu {
     position: absolute;
-    top: 0%;
-    width: 10.5%;
-    left: 5%;
+    width: 100%;
+    top: 2%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    z-index: 99;
 
-    .menu__header {
-        position: relative;
-        z-index: 99;
-        
-        .menu__header__logo {
-            display: inline-block;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            user-select: none;
-    
-        }
-    
-        .menu__header__icon {
-            position: absolute;
-            top: 50%;
-            color: $bege;
-            font-size: 26px;
-            cursor: pointer;
-            z-index: 99;
-        }
-    
-        .menu__header__icon--close {
-            position: absolute;
-            top: 50%;
-            color: $bege;
-            font-size: 30px;
-            cursor: pointer;
-            z-index: 99;
+    .menu__logo {
+        width: 44%;
+    }
+
+    .menu__option {
+        display: block;
+        margin-top: 1vw;
+        font-size: 16px;
+        color: $bege;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+
+        &:hover {
+            color: $cinza-claro;
         }
     }
 
-    .menu__content {
-        position: relative;
-        padding: 1vw;
-        background-color: $azul-claro;
-        z-index: 99;
-        border: 3px solid $bege;
-        border-width: 4px 4px 4px 5px;
-        border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+    .menu__link {
+        display: inline-block;
+        text-align: right;
+        text-decoration: none;
+        margin-right: 1vw;
 
-        .menu__content__link {
-            display: block;
-            position: relative;
+    }
+
+    .menu__icon {
+        display: block;
+        color: $bege;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+        margin-top: 1vw;
+
+        &:hover {
+             color: $cinza-claro;
+        }
+
+    }
+
+    .menu__language {
+        text-align: right;
+        margin-top: 1vw;
+
+        .menu__language__link {
             font-size: 14px;
             color: $bege;
-            font-weight: 800;
-            padding-bottom: 2vw;
+            font-weight: 700;
             text-decoration: none;
-            text-align: center;
-            text-transform: uppercase;
-            user-select: none;
-            z-index: 99;
-            
+
             &:hover {
-                color: $azul-escuro;
+                color: $cinza-claro;
             }
+        }
 
-            &:last-of-type {
-                padding-bottom: 0;
-            }
+        .menu__language__text {
+            font-size: 20px;
+            color: $bege;
+            font-weight: 700;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
 
-            &:first-of-type {
-                padding-top: 0.5vw;
-            }
+        .active {
+            color: $cinza-claro;
         }
     }
 }
+
 
 @media only screen and (max-width:767px) {
 
     .menu {
-        top: 10%;
-        width: 40%;
-        left: 30%;
+        top: 2.5%;
+
+        .menu__logo {
+            display: none;
+        }
 
         .menu__link {
-            font-size: 16px;
-            margin-bottom: 4vw;
-
-            &:hover {
-                color: $bege;
-            }
+            margin-right: 3.5vw;
         }
-
-        .menu__content {
-            padding: 4vw;
-            width: 50vw;
-
-            .menu__content__link {
-                margin-bottom: 4vw;
-
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
-            }
-
-        }
-    }
-
-}
-
-@media only screen and (min-width:768px) and (max-width:1399px) {
-
-    .menu {
-
-        .menu__content {
-            .menu__content__link {
-                font-size: 10px;
-            }
-        }
-    }
-
-}
-
-@media only screen and (min-width:1400px) and (max-width:1700px) {
-
-    .menu {
-
-        .menu__content {
-            .menu__content__link {
-                font-size: 11px;
-            }
-        }
+    
     }
 
 }

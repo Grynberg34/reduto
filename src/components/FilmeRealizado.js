@@ -7,8 +7,8 @@ import "../scss/filme.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Social from './Social';
 import Menu from './Menu';
+import MenuMobile from './MenuMobile';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 
@@ -19,14 +19,36 @@ function FilmeRealizado(props) {
   var filme = props.filme;
 
   var link = props.link;
+  var index = props.index;
 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = (link) => {
-    store.dispatch(GetImgLink(link))
+  const handleShow = (link, index) => {
+    store.dispatch(GetImgLink(link, index))
     setShow(true)
   };
+
+  const getNextImage = (link, index) => {
+
+    if (filme.galeria.length < index+1) {
+      index=0
+      link= filme.galeria[0]
+    }
+
+    store.dispatch(GetImgLink(link, index))
+  }
+
+  const getPrevImage = (link, index) => {
+
+    if (index === -1) {
+      index=filme.galeria.length-1
+      link= filme.galeria[filme.galeria.length-1]
+    }
+
+    store.dispatch(GetImgLink(link, index))
+  }
+
 
   if (filme === null || filme.uri !== id) {
     store.dispatch(GetFilm(id))
@@ -41,10 +63,10 @@ function FilmeRealizado(props) {
     var ficha = Object.entries(filme.ficha_técnica);
 
     return (
-      <div className='filme' id='filme' style={{backgroundImage: `linear-gradient(to bottom, rgba(29,45,68, 0.8) 0%,rgba(29,45,68,0.8) 100%), url('${filme.imagem_capa}')`}}> 
+      <div className='filme' id='filme' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0, 0.8) 0%,rgba(0,0,0,0.8) 100%), url('${filme.imagem_capa}')`}}> 
 
-        <Social></Social>
         <Menu></Menu>
+        <MenuMobile></MenuMobile>
 
         <Container fluid>
           <Row>
@@ -110,7 +132,7 @@ function FilmeRealizado(props) {
                     <Row>
                       { filme.galeria.map( (item, index) => 
                         <Col md={4} key={index}>
-                          <img className='filme__content__galeria__img' src={item} alt="" onClick={() => handleShow(`${item}`)}/>
+                          <img className='filme__content__galeria__img' src={item} alt="" onClick={() => handleShow(`${item}`, index)}/>
                         </Col>
                       )}
                     </Row>
@@ -127,7 +149,19 @@ function FilmeRealizado(props) {
 
         <Modal show={show} onHide={handleClose} className="modal">
           <img className='modal__img' src={link} alt="" />
-          <button className="modal__close" onClick={handleClose}>VOLTAR</button>
+          <Container fluid>
+            <Row>
+              <Col xs={4}>
+                <button className="modal__option" onClick={() => getPrevImage(`${filme.galeria[index-1]}`, index-1)}>ANTERIOR</button>
+              </Col>
+              <Col xs={4}>
+              <button className="modal__close" onClick={handleClose}>VOLTAR</button>
+              </Col>
+              <Col xs={4}>
+                <button className="modal__option" onClick={() => getNextImage(`${filme.galeria[index+1]}`, index+1)}>PRÓXIMA</button>
+              </Col>
+            </Row>
+          </Container>
         </Modal>
 
 
@@ -144,7 +178,8 @@ function FilmeRealizado(props) {
 function mapStateToProps(state) {
   return {
     filme: state.filme,
-    link: state.link
+    link: state.link,
+    index: state.index
   }
   
 }
