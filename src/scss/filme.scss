@@ -193,7 +193,13 @@ a {
         &:hover {
             color: $cinza-claro;
         }
+
+        .modal__right {
+            display: block;
+            transform: scaleX(-1);
+        }
     }
+
 }
 
 .modal-content {

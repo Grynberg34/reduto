@@ -152,13 +152,13 @@ function FilmeRealizado(props) {
           <Container fluid>
             <Row>
               <Col xs={4}>
-                <button className="modal__option" onClick={() => getPrevImage(`${filme.galeria[index-1]}`, index-1)}>ANTERIOR</button>
+                <button className="modal__option" onClick={() => getPrevImage(`${filme.galeria[index-1]}`, index-1)}><i className='flaticon-black-triangular-arrowhead-pointing-to-left-direction'></i></button>
               </Col>
               <Col xs={4}>
               <button className="modal__close" onClick={handleClose}>VOLTAR</button>
               </Col>
               <Col xs={4}>
-                <button className="modal__option" onClick={() => getNextImage(`${filme.galeria[index+1]}`, index+1)}>PRÓXIMA</button>
+                <button className="modal__option" onClick={() => getNextImage(`${filme.galeria[index+1]}`, index+1)}><i className='flaticon-black-triangular-arrowhead-pointing-to-left-direction modal__right'></i></button>
               </Col>
             </Row>
           </Container>
