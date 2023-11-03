@@ -13,7 +13,7 @@ function SocialHome() {
         <Row>
           <Col xs={7} md={4}>
             <Link to="" className="socialhome__link"><i className=" socialhome__icon flaticon-social-media"></i></Link>
-            <Link to="" className="socialhome__link"><i className=" socialhome__icon flaticon-facebook-app-symbol"></i></Link>
+            <Link to="" className="socialhome__link"><i className=" socialhome__icon flaticon-twitter"></i></Link>
             <Link to="" className="socialhome__link"><i className=" socialhome__icon flaticon-youtube"></i></Link>
             <Link to="" className="socialhome__link"><i className=" socialhome__icon flaticon-vimeo"></i></Link>
           </Col>

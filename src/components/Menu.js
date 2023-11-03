@@ -39,7 +39,7 @@ function Menu() {
             <Col md={1}></Col>
             <Col md={2}>
               <Link to="" className="menu__link"><i className=" menu__icon flaticon-social-media"></i></Link>
-              <Link to="" className="menu__link"><i className=" menu__icon flaticon-facebook-app-symbol"></i></Link>
+              <Link to="" className="menu__link"><i className=" menu__icon flaticon-twitter"></i></Link>
               <Link to="" className="menu__link"><i className=" menu__icon flaticon-youtube"></i></Link>
               <Link to="" className="menu__link"><i className=" menu__icon flaticon-vimeo"></i></Link>
             </Col>

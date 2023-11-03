@@ -114,7 +114,7 @@ function FilmeRealizado(props) {
                 </div>
 
                 <div className='filme__content__festivais'>
-                  <h3 className='filme__content__festivais__title'>Festivais</h3>
+                  <h3 className='filme__content__festivais__title'>Festivais e Prêmios</h3>
 
                     <ul className='filme__content__festivais__list'>
 

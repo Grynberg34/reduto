@@ -16,8 +16,8 @@ a {
 
 .filmes {
     padding-top: 6vw;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 
     .filmes__filme {
         position: relative;
@@ -28,7 +28,7 @@ a {
             color: $bege;
             font-weight: 700;
             text-transform: uppercase;
-            margin-bottom: -15px;
+            margin-bottom: 0;
             text-align: right;
         }
 
