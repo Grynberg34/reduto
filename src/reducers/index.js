@@ -60,6 +60,16 @@ const getImgIndexReducer = (index = null, action) => {
     return index;
 };
 
+const getProdutoraReducer = (produtora= null, action) => {
+    if (action.type === 'GET_PRODUTORA') {
+
+        return action.payload;
+        
+    }
+
+    return produtora;
+};
+
 export default combineReducers({
 
     numbers: getNumbersReducer,
@@ -67,6 +77,7 @@ export default combineReducers({
     filmes: getFilmsReducer,
     filme: getFilmReducer,
     link: getImgLinkReducer,
-    index: getImgIndexReducer
+    index: getImgIndexReducer,
+    produtora: getProdutoraReducer
 
 });

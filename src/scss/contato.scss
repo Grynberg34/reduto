@@ -1,0 +1,109 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+@import '../scss/animations.scss';
+
+#contato {
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: $preto;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.contato {
+    padding-top: 6vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    .contato__content {
+        margin-top: 10vw;
+        margin-left: 8vw;
+        padding-right: 10vw;
+        margin-bottom: 10vw;
+
+        .contato__content__title {
+            font-size: 44px;
+            color: $bege;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 4vw;
+        }
+
+        .contato__content__social {
+            margin-bottom: 2vw;
+
+            .contato__content__social__icon {
+                display: inline-block;
+                font-size: 26px;
+                color: $bege;
+                font-weight: 700;
+                margin-right: 4vw;
+                vertical-align: middle;
+            }
+    
+            .contato__content__social__link {
+                display: inline-block;
+                font-size: 20px;
+                color: $cinza-claro;
+                font-weight: 700;
+
+                &:hover {
+                    color: $bege;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+@media only screen and (max-width:767px) {
+
+    .contato {
+        .contato__content {
+            margin-top: 80vw;
+            margin-bottom: 40vw;
+            margin-left: 14vw;
+            padding-right: 0;
+
+            .contato__content__title {
+                font-size: 30px;
+                margin-bottom: 10vw;
+            }
+
+            .contato__content__social {
+                margin-bottom: 8vw;
+
+                .contato__content__social__icon {
+                    font-size: 20px;
+                }
+
+                .contato__content__social__link {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1399px) {
+
+}
+
+@media only screen and (min-width:1400px) and (max-width:1700px) {
+
+
+
+
+}

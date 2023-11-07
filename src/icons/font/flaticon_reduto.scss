@@ -2,11 +2,11 @@ $flaticon_reduto-font: "flaticon_reduto";
 
 @font-face {
     font-family: $flaticon_reduto-font;
-    src: url("./flaticon_reduto.ttf?251a712f9bd732fba601d054437606e8") format("truetype"),
-url("./flaticon_reduto.woff?251a712f9bd732fba601d054437606e8") format("woff"),
-url("./flaticon_reduto.woff2?251a712f9bd732fba601d054437606e8") format("woff2"),
-url("./flaticon_reduto.eot?251a712f9bd732fba601d054437606e8#iefix") format("embedded-opentype"),
-url("./flaticon_reduto.svg?251a712f9bd732fba601d054437606e8#flaticon_reduto") format("svg");
+    src: url("./flaticon_reduto.ttf?2d871e5ff99ed1f78dbb32b32f441e2f") format("truetype"),
+url("./flaticon_reduto.woff?2d871e5ff99ed1f78dbb32b32f441e2f") format("woff"),
+url("./flaticon_reduto.woff2?2d871e5ff99ed1f78dbb32b32f441e2f") format("woff2"),
+url("./flaticon_reduto.eot?2d871e5ff99ed1f78dbb32b32f441e2f#iefix") format("embedded-opentype"),
+url("./flaticon_reduto.svg?2d871e5ff99ed1f78dbb32b32f441e2f#flaticon_reduto") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -27,11 +27,9 @@ $flaticon_reduto-map: (
     "vimeo": "\f104",
     "menu-hand-drawn-lines-outlines": "\f105",
     "cancel-hand-drawn-cross-in-square-button-outline": "\f106",
-    "clock": "\f107",
-    "calendar": "\f108",
-    "clapperboard": "\f109",
-    "twitter": "\f10a",
-    "black-triangular-arrowhead-pointing-to-left-direction": "\f10b",
+    "twitter": "\f107",
+    "black-triangular-arrowhead-pointing-to-left-direction": "\f108",
+    "mail": "\f109",
 );
 
 .flaticon-facebook-app-symbol:before {
@@ -52,18 +50,12 @@ $flaticon_reduto-map: (
 .flaticon-cancel-hand-drawn-cross-in-square-button-outline:before {
     content: map-get($flaticon_reduto-map, "cancel-hand-drawn-cross-in-square-button-outline");
 }
-.flaticon-clock:before {
-    content: map-get($flaticon_reduto-map, "clock");
-}
-.flaticon-calendar:before {
-    content: map-get($flaticon_reduto-map, "calendar");
-}
-.flaticon-clapperboard:before {
-    content: map-get($flaticon_reduto-map, "clapperboard");
-}
 .flaticon-twitter:before {
     content: map-get($flaticon_reduto-map, "twitter");
 }
 .flaticon-black-triangular-arrowhead-pointing-to-left-direction:before {
     content: map-get($flaticon_reduto-map, "black-triangular-arrowhead-pointing-to-left-direction");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon_reduto-map, "mail");
 }

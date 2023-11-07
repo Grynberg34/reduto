@@ -1,10 +1,10 @@
 @font-face {
     font-family: "flaticon_reduto";
-    src: url("./flaticon_reduto.ttf?251a712f9bd732fba601d054437606e8") format("truetype"),
-url("./flaticon_reduto.woff?251a712f9bd732fba601d054437606e8") format("woff"),
-url("./flaticon_reduto.woff2?251a712f9bd732fba601d054437606e8") format("woff2"),
-url("./flaticon_reduto.eot?251a712f9bd732fba601d054437606e8#iefix") format("embedded-opentype"),
-url("./flaticon_reduto.svg?251a712f9bd732fba601d054437606e8#flaticon_reduto") format("svg");
+    src: url("./flaticon_reduto.ttf?2d871e5ff99ed1f78dbb32b32f441e2f") format("truetype"),
+url("./flaticon_reduto.woff?2d871e5ff99ed1f78dbb32b32f441e2f") format("woff"),
+url("./flaticon_reduto.woff2?2d871e5ff99ed1f78dbb32b32f441e2f") format("woff2"),
+url("./flaticon_reduto.eot?2d871e5ff99ed1f78dbb32b32f441e2f#iefix") format("embedded-opentype"),
+url("./flaticon_reduto.svg?2d871e5ff99ed1f78dbb32b32f441e2f#flaticon_reduto") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -36,18 +36,12 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-cancel-hand-drawn-cross-in-square-button-outline:before {
     content: "\f106";
 }
-.flaticon-clock:before {
+.flaticon-twitter:before {
     content: "\f107";
 }
-.flaticon-calendar:before {
+.flaticon-black-triangular-arrowhead-pointing-to-left-direction:before {
     content: "\f108";
 }
-.flaticon-clapperboard:before {
+.flaticon-mail:before {
     content: "\f109";
-}
-.flaticon-twitter:before {
-    content: "\f10a";
-}
-.flaticon-black-triangular-arrowhead-pointing-to-left-direction:before {
-    content: "\f10b";
 }

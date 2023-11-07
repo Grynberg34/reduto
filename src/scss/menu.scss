@@ -1,7 +1,8 @@
 @import '../scss/colors.scss';
 @import '../scss/font.scss';
 
-.menu {
+#menu {
+
     position: absolute;
     width: 100%;
     top: 2%;
@@ -10,7 +11,7 @@
     z-index: 99;
 
     .menu__logo {
-        width: 44%;
+        width: 50%;
     }
 
     .menu__option {
@@ -44,14 +45,14 @@
         margin-top: 1vw;
 
         &:hover {
-             color: $cinza-claro;
+                color: $cinza-claro;
         }
 
     }
 
     .menu__language {
         text-align: right;
-        margin-top: 1vw;
+        margin-top: 0.5vw;
 
         .menu__language__link {
             font-size: 14px;
@@ -76,13 +77,16 @@
             color: $cinza-claro;
         }
     }
+    
 }
 
 
 @media only screen and (max-width:767px) {
 
-    .menu {
+    #menu {
         top: 2.5%;
+        padding-left: 7.5vw;
+        padding-right: 7.5vw;
 
         .menu__logo {
             display: none;
@@ -94,4 +98,25 @@
     
     }
 
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+
+    #menu {
+        .menu__option {
+            font-size: 14px;
+        }
+
+        .menu__icon {
+            font-size: 14px;
+        }
+
+        .menu__language {
+
+            .menu__language__link {
+                font-size: 12px;
+            }
+        }
+    }
 }

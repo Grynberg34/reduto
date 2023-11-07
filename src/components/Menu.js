@@ -9,7 +9,7 @@ function Menu() {
 
   if (window.innerWidth > 768) {
     return (
-      <div className="menu">
+      <div id="menu" className="menu">
         <Container fluid>
           <Row>
             <Col md={2}>
@@ -27,7 +27,7 @@ function Menu() {
                   </Col>
 
                   <Col md={3}>
-                    <Link className="menu__option" to="/´produtora">A Produtora</Link>
+                    <Link className="menu__option" to="/produtora">A Produtora</Link>
                   </Col>
 
                   <Col md={3}>
@@ -56,7 +56,7 @@ function Menu() {
 
   } else {
     return (
-      <div className="menu">
+      <div id="menu" className="menu">
         <Container fluid>
           <Row>
             <Col xs={7}>

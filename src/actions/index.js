@@ -1,4 +1,5 @@
 import filmes from "../filmes";
+import produtora from "../produtora";
 
 export const GetNumbers = () => async dispatch => {
 
@@ -42,5 +43,11 @@ export const GetImgLink = (link, index) => async dispatch => {
 
   dispatch({ type: 'GET_IMG_LINK', payload: link });
   dispatch({ type: 'GET_IMG_INDEX', payload: index });
+
+};
+
+export const GetProdutora = () => async dispatch => {
+
+  dispatch({ type: 'GET_PRODUTORA', payload: produtora});
 
 };

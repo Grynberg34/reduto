@@ -6,11 +6,7 @@
     position: relative;
     background-color: $cinza-escuro;
     overflow-x: hidden;
-}
 
-
-
-.home {
     .home__menu {
         position: absolute;
         width: 20%;
@@ -63,15 +59,17 @@
     }
 }
 
+
+
+
 @media only screen and (max-width:767px) {
+
+
+
 
     #home {
         height: 100vh;
         overflow: hidden;
-    }
-
-
-    .home {
 
         .home__menu {
             top: 15%;
@@ -121,9 +119,11 @@
 
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
 
-    .menu {
-        width: 30%;
-        left: 35%;
+    #home {
+        .menu {
+            width: 30%;
+            left: 35%;
+        }
     }
 
     .area {
@@ -136,10 +136,12 @@
 
 @media only screen and (min-width: 1301px) and (max-width: 1500px) {
 
-    .menu {
-        width: 24%;
-        left: 38%;
-        top: 33%;
+    #home {
+        .menu {
+            width: 24%;
+            left: 38%;
+            top: 33%;
+        }
     }
 
     .area {
