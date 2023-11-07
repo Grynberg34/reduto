@@ -28,7 +28,7 @@ function Produtora(props) {
   } else {
 
     return (
-      <div className='produtora' id='produtora' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 100%), url('/imagens/${numbers[2]}.jpg')`}}>
+      <div className='produtora' id='produtora' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url('/imagens/${numbers[2]}.jpg')`}}>
   
         <Menu></Menu>
         <MenuMobile></MenuMobile>

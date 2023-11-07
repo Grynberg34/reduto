@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { store } from '../store';
 import { Link } from "react-router-dom";
 import { GetFilms } from '../actions';
+import { GetNumbers } from '../actions';
 import "../scss/filmes.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,8 +14,13 @@ function Filmes(props) {
 
   var filmes = props.filmes;
 
+  var numbers = props.numbers;
+
   if (filmes === null) {
     store.dispatch(GetFilms())
+    if (numbers === null) {
+      store.dispatch(GetNumbers())
+    }
 
     return (
       <div>
@@ -24,7 +30,7 @@ function Filmes(props) {
   } else {
 
     return (
-      <div className='filmes' id='filmes'>
+      <div className='filmes' id='filmes' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url('/imagens/${numbers[0]}.jpg')`}}>
   
         <Menu></Menu>
         <MenuMobile></MenuMobile>
@@ -72,7 +78,8 @@ function Filmes(props) {
 
 function mapStateToProps(state) {
   return {
-    filmes: state.filmes
+    filmes: state.filmes,
+    numbers: state.numbers
   }
   
 }
