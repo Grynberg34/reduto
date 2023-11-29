@@ -70,6 +70,26 @@ const getProdutoraReducer = (produtora= null, action) => {
     return produtora;
 };
 
+const getProjetosReducer = (projetos= null, action) => {
+    if (action.type === 'GET_PROJETOS') {
+
+        return action.payload;
+        
+    }
+
+    return projetos;
+};
+
+const getProjetoIdReducer = (projeto= 0, action) => {
+    if (action.type === 'GET_PROJETO_ID') {
+
+        return action.payload;
+        
+    }
+
+    return projeto;
+};
+
 export default combineReducers({
 
     numbers: getNumbersReducer,
@@ -78,6 +98,8 @@ export default combineReducers({
     filme: getFilmReducer,
     link: getImgLinkReducer,
     index: getImgIndexReducer,
-    produtora: getProdutoraReducer
+    produtora: getProdutoraReducer,
+    projetos: getProjetosReducer,
+    projeto: getProjetoIdReducer,
 
 });

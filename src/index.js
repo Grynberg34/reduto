@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import App from './components/App';
 import Filmes from './components/Filmes';
 import FilmeRealizado from './components/FilmeRealizado';
+import Projetos from './components/Projetos';
 import Produtora from './components/Produtora';
 import Contato from './components/Contato';
 import {store, persistor} from './store.js';
@@ -21,6 +22,7 @@ ReactDOM.render(
           <Route path="/" element={<App />}></Route>
           <Route path="/filmes" element={<Filmes />}></Route>
           <Route path="/filmes/:id" element={<FilmeRealizado />}></Route>
+          <Route path="/projetos" element={<Projetos />}></Route>
           <Route path="/produtora" element={<Produtora />}></Route>
           <Route path="/contato" element={<Contato />}></Route>
         </Routes>

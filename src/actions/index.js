@@ -1,4 +1,5 @@
 import filmes from "../filmes";
+import projetos from "../projetos";
 import produtora from "../produtora";
 
 export const GetNumbers = () => async dispatch => {
@@ -49,5 +50,18 @@ export const GetImgLink = (link, index) => async dispatch => {
 export const GetProdutora = () => async dispatch => {
 
   dispatch({ type: 'GET_PRODUTORA', payload: produtora});
+
+};
+
+export const GetProjetos = () => async dispatch => {
+
+  dispatch({ type: 'GET_PROJETOS', payload: projetos});
+
+};
+
+
+export const GetProjetoId = (index) => async dispatch => {
+
+  dispatch({ type: 'GET_PROJETO_ID', payload: index});
 
 };

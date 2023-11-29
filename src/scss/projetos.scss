@@ -1,0 +1,176 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+@import '../scss/animations.scss';
+
+#projetos {
+    position: relative;
+    overflow-x: hidden;
+    background-color: $preto;
+    height: 100vh;
+
+    .projetos__menu {
+        margin-top: 10vw;
+        padding-right: 2vw;
+
+        .projetos__menu__title {
+            color: $bege;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 4vw;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .projetos__menu__options {
+            padding-left: 0;
+            list-style: none;
+
+            .projetos__menu__options__option {
+                font-size: 18px;
+                color: $bege;
+                font-weight: 400;
+                padding: 1vw;
+                margin-bottom: 2vw;
+                text-align: center;
+                cursor: pointer;
+                border: 2px solid $bege;
+            }
+
+            .active {
+                background-color: $bege;
+                color: $preto;
+            }
+        }
+    }
+
+    .projetos__projeto {
+        margin-top: 10vw;
+        padding: 2vw;
+        border: 2px solid $bege;
+        margin-bottom: 6vw;
+
+        .projetos__projeto__title {
+            font-size: 2vw;
+            color: $bege;
+            font-weight: 700;
+            margin-bottom: 0.5vw;
+            text-align: center;
+        }
+
+        .projetos__projeto__type {
+            font-size: 1vw;
+            color: $cinza-claro;
+            font-weight: 400;
+            line-height: 2;
+            margin-bottom: 2vw;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .projetos__projeto__logline {
+            font-size: 0.75vw;
+            color:  $bege;
+            font-weight: 400;
+            line-height: 2;
+            margin-bottom: 2vw;
+        }
+
+        .projetos__projeto__info {
+            font-size: 0.75vw;
+            color: $bege;
+            font-weight: 400;
+            margin-bottom: 1vw;
+            line-height: 2;
+
+            .projetos__projeto__info__title {
+                color: $cinza-claro;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.projetos {
+    padding-top: 6vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+}
+
+@media only screen and (max-width:767px) {
+
+    #projetos {
+        padding-top: 70vw;
+        padding-bottom: 10vw;
+
+        .projetos__menu {
+            padding-left: 5vw;
+            padding-right: 5vw;
+
+            .projetos__menu__title {
+                font-size: 7vw;
+                margin-bottom: 20vw;
+            }
+
+            .projetos__menu__options {
+
+                .projetos__menu__options__option {
+                    font-size: 4vw;
+                    margin-bottom: 5vw;
+                }
+            }
+
+        }
+        
+        .projetos__projeto {
+            padding: 4vw;
+            padding-top: 10vw;
+            padding-bottom: 10vw;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            margin-bottom: 20vw;
+            margin-left: 5vw;
+            margin-right: 5vw;
+    
+            .projetos__projeto__title {
+                font-size: 6vw;
+            }
+    
+            .projetos__projeto__type {
+                font-size: 4vw;
+                margin-bottom: 10vw;
+            }
+
+            .projetos__projeto__logline {
+                font-size: 4vw;
+                text-align: justify;
+                margin-bottom: 10vw;
+            }
+    
+            .projetos__projeto__info {
+                font-size: 4vw;
+                margin-bottom: 5vw;
+
+            }
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1399px) {
+
+
+}
+
+@media only screen and (min-width:1400px) and (max-width:1700px) {
+
+
+
+}
