@@ -13,25 +13,25 @@ function Menu() {
         <Container fluid>
           <Row>
             <Col md={2}>
-              <Link to="/"><img className="menu__logo" src="/logo2.png" alt="" /></Link>
+              <Link to="/en"><img className="menu__logo" src="/logo2.png" alt="" /></Link>
             </Col>
             <Col md={6}>
               <Container fluid>
                 <Row>
                   <Col md={3}>
-                    <Link className="menu__option" to="/filmes">Filmes</Link>
+                    <Link className="menu__option" to="/filmes/en">Films</Link>
                   </Col>
 
                   <Col md={3}>
-                    <Link className="menu__option" to="/projetos">Projetos</Link>
+                    <Link className="menu__option" to="/projetos/en">Projects</Link>
                   </Col>
 
                   <Col md={3}>
-                    <Link className="menu__option" to="/produtora">A Produtora</Link>
+                    <Link className="menu__option" to="/produtora/en">About</Link>
                   </Col>
 
                   <Col md={3}>
-                    <Link className="menu__option" to="/contato">Contato</Link>
+                    <Link className="menu__option" to="/contato/en">Contact</Link>
                   </Col>
                 </Row>
               </Container>
@@ -45,7 +45,7 @@ function Menu() {
             </Col>
             <Col md={1}>
               <div className="menu__language">
-                <Link className="menu__language__link active" to="/">PT</Link> <span className="menu__language__text">|</span> <Link className="menu__language__link" to="/en">EN</Link>
+                <Link className="menu__language__link" to="/">PT</Link> <span className="menu__language__text">|</span> <Link className="menu__language__link active" to="/en">EN</Link>
               </div>
             </Col>
   
@@ -68,7 +68,7 @@ function Menu() {
             <Col xs={1}></Col>
             <Col xs={4}>
               <div className="menu__language">
-                <Link className="menu__language__link active" to="/">PT</Link> <span className="menu__language__text">|</span> <Link className="menu__language__link" to="/en">EN</Link>
+                <Link className="menu__language__link" to="/">PT</Link> <span className="menu__language__text">|</span> <Link className="menu__language__link active" to="/en">EN</Link>
               </div>
             </Col>
   
