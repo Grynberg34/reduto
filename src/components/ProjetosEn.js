@@ -66,9 +66,9 @@ function Projetos(props) {
                 
                 <h1 className="projetos__projeto__title">{projetos[projeto].título}</h1>
 
-                <p className="projetos__projeto__type">{projetos[projeto].tipo}</p>
+                <p className="projetos__projeto__type">{projetos[projeto].tipo_en}</p>
 
-                <p className='projetos__projeto__logline'>{projetos[projeto].logline}</p>
+                <p className='projetos__projeto__logline'>{projetos[projeto].logline_en}</p>
 
                 <h2 className="projetos__projeto__info"><span className='projetos__projeto__info__title'>Direction:</span> {projetos[projeto].direção}</h2>
                 
