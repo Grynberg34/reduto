@@ -36,7 +36,7 @@ function Projetos(props) {
   } else {
 
     return (
-      <div className='projetos' id='projetos' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url('/imagens/${numbers[0]}.jpg')`}}>
+      <div className='projetos' id='projetos' style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url('/imagens/${numbers[1]}.jpg')`}}>
   
         <Menu></Menu>
         <MenuMobile></MenuMobile>
@@ -84,7 +84,7 @@ function Projetos(props) {
 
                 {
                   projetos[projeto].fomento !== null ?
-                  <h2 className="projetos__projeto__info"><span className='projetos__projeto__info__title'>Fomento:</span> {projetos[projeto].fomento}</h2>
+                  <h2 className="projetos__projeto__info"><span className='projetos__projeto__info__title'>Financiamento:</span> {projetos[projeto].fomento}</h2>
                   :null
                 }     
 

@@ -56,12 +56,12 @@
 
         .menu__language__link {
             font-size: 14px;
-            color: $bege;
+            color: $cinza-claro;
             font-weight: 700;
             text-decoration: none;
 
             &:hover {
-                color: $cinza-claro;
+                color: $bege;
             }
         }
 
@@ -74,7 +74,7 @@
         }
 
         .active {
-            color: $cinza-claro;
+            color: $bege;
         }
     }
     

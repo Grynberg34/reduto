@@ -28,7 +28,7 @@ function App(props) {
       <SocialHome></SocialHome>
 
       <div className='home__menu'>
-        <Link to="/"><img className='home__menu__logo scale-in-ver-center' src="/logo2.png" alt="" /></Link>
+        <Link to="/"><img className='home__menu__logo' src="/logo2.png" alt="" /></Link>
       </div>
       <Container fluid>
         <Row>

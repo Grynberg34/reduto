@@ -2,6 +2,7 @@ const filmes = [
     {
         "id": 4,
         "nome": "Manhã de Domingo",
+        "nome_en": "Sunday Morning",
         "uri": "manha-de-domingo",
         "imagem_capa":"/filmes/domingo/capa.png",
         "video_capa": "/filmes/domingo/domingo.mp4",
@@ -56,13 +57,14 @@ const filmes = [
             "Editing": "Vinícius Silva",
             "Sound Editing and Mixing": "Bernardo Uzeda"
         },
-        "festivais": ["Urso de Prata - Festival de Berlim","Best Short Narrative - BlackStar Film Festival ","Festival Internacional de Curtas-metragens de São Paulo – Kinoforum (Prêmio Porta Curtas)","Doclisboa","Festival de Huelva","Festival Internacional del Nuevo Cine Latinoamericano de La Habana","FESPACO","Mostra de Cinema de Tiradentes ","Olhar de Cinema","Goiânia Mostra Curtas","Mostra de Cinema de Vitória","Festival Curta Cinema","FestCurtas BH"],
+        "festivais": ["Urso de Prata - Festival de Berlim","Best Short Narrative - BlackStar Film Festival (Best Short Narrative)","Festival Internacional de Curtas-metragens de São Paulo – Kinoforum (Prêmio Porta Curtas)","Doclisboa","Festival de Huelva","Festival Internacional del Nuevo Cine Latinoamericano de La Habana","FESPACO","Mostra de Cinema de Tiradentes ","Olhar de Cinema","Goiânia Mostra Curtas","Mostra de Cinema de Vitória","Festival Curta Cinema","FestCurtas BH"],
         "galeria": ["/filmes/domingo/galeria/1.jpg", "/filmes/domingo/galeria/2.jpg", "/filmes/domingo/galeria/3.jpg"]
 
     },
     {
         "id": 3,
         "nome": "Gargaú",
+        "nome_en": "Gargaú",
         "uri": "gargau",
         "imagem_capa":"/filmes/gargau/capa.png",
         "video_capa": "/filmes/gargau/gargau.mp4",
@@ -104,6 +106,7 @@ const filmes = [
     {
         "id": 2,
         "nome": "BR3",
+        "nome_en": "BR3",
         "uri": "br3",
         "imagem_capa":"/filmes/br3/capa.png",
         "video_capa": "/filmes/br3/br3.mp4",
@@ -160,12 +163,13 @@ const filmes = [
             "Sound Editing and Mixing": "Bernardo Uzeda",
             "Maré Sobre Saltos Team": "Carlos Marra, Gabriel Félix, Karina Marinho, and Marcos Aprigio"            
         },
-        "festivais": ["Festival de Cinema de Vitória (Prêmio Especial do Júri)","Melhor Direção - Goiânia Mostra Curtas","Menção Honrosa do Júri - XI Janela Internacional de Recife ","Festival de Cinema Luso-Brasileiro de Santa Maria da Feira (Prêmio Revelação)","IFFR - International Film Festival Rotterdam - Programa Soul in Eye","Festival de Brasília do Cinema Brasileiro","Encontro de Cinema Negro Brasil, África e Caribe Zózimo Bulbul ","FestCurtas BH","Curta Cinema","Recifest","Panorama Internacional Coisa de Cinema ","Semana de Cinema - Circuito Sesc","Festival Mix Brasil de Cultura da Diversidade","Festival Mimoso de Cinema","OutFestPerú","Mostra Pajeú de Cinema","Contrast Film Festival"," Mostra Itinerante de Cinemas Negros Mahomed Bamba","Tamoio","FBCU - Festival Brasileiro de Cinema Universitário","Sertão e Diversidade - Festival Internacional de Curtas","3 Margens: Festival Latino-Americano de Cinema","Curta O Gênero ","Cinecipó - Festival do Filme Insurgente "],
+        "festivais": ["Festival de Cinema de Vitória (Prêmio Especial do Júri)","Goiânia Mostra Curtas (Melhor Direção)","XI Janela Internacional de Recife (Menção Honrosa do Júri)","Festival de Cinema Luso-Brasileiro de Santa Maria da Feira (Prêmio Revelação)","IFFR - International Film Festival Rotterdam - Programa Soul in Eye","Festival de Brasília do Cinema Brasileiro","Encontro de Cinema Negro Brasil, África e Caribe Zózimo Bulbul ","FestCurtas BH","Curta Cinema","Recifest","Panorama Internacional Coisa de Cinema ","Semana de Cinema - Circuito Sesc","Festival Mix Brasil de Cultura da Diversidade","Festival Mimoso de Cinema","OutFestPerú","Mostra Pajeú de Cinema","Contrast Film Festival"," Mostra Itinerante de Cinemas Negros Mahomed Bamba","Tamoio","FBCU - Festival Brasileiro de Cinema Universitário","Sertão e Diversidade - Festival Internacional de Curtas","3 Margens: Festival Latino-Americano de Cinema","Curta O Gênero ","Cinecipó - Festival do Filme Insurgente "],
         "galeria": ["/filmes/br3/galeria/1.png", "/filmes/br3/galeria/2.png", "/filmes/br3/galeria/3.png", "/filmes/br3/galeria/4.png"]
     },
     {
         "id": 1,
         "nome": "Pele suja minha carne",
+        "nome_en": "Dirty Skin",
         "uri": "pele-suja-minha-carne",
         "imagem_capa":"/filmes/pele/capa.png",
         "video_capa": "/filmes/pele/pele.mp4",
@@ -212,7 +216,8 @@ const filmes = [
             "Original Music": "Miguel Mermelstein",
             "Associate Producer": "Caraduá Produções"            
         },
-        "festivais": ["Prêmio Elipse 2016","Melhor Filme - 2º Toró - Festival Audiovisual Universitário de Belém ","Melhor Montagem - 1º CORTE Festival","Melhor Montagem e Melhor Direção de Arte - 20º Curta Taquary ","10 Melhores - Voto Popular - 28º Festival Internacional de Curtas-Metragens de São Paulo","16ª Mostra de Audiovisual Universitário América Latina UFMT (16MAUAL) (Prêmio Especial do Júri)","Melhor Montagem na Competitiva Nacional e Menção Honrosa pelo Júri do Janela Crítica - X Janela Internacional de Cinema do Recife","Melhor curta nacional pelo Júri Popular e Melhor curta dirigido por homem pelo Júri ABD-PE/APECI - V Recifest: Festival de Cinema da Diversidade Sexual e de Gênero","Menção Honrosa - Mostra Fronteiras Imaginárias do Festival Visões Periféricas","16ª Goiânia Mostra Curtas","Cine Tamoio","FLõ - Festival do Livre Olhar ","Mostra do Filme Livre ","Mostra Outros Cinemas","2º Cinemão / Mostra dxs Bi, das Gay, dxs Trans e das Sapatão","Mostra de Curtas de Ficção da Semana de Imagem e Som 2017 ","Concordia Film Festival ","14ª MIFEC - Mostra Internacional de Filmes de Escolas de Cinema","Encontro de Cinema Negro Zózimo Bulbul - Brasil, África e Caribe ","Korea Queer Film Festival (KQFF)","2ª Mostra Pequi de Audiovisual ","11ª Mostra Audiovisual de Cambuquira ","28º Festival Internacional de Curtas Metragens de São Paulo - Mostra Brasil ","7º Cinecipó – Festival Internacional do Filme Insurgente","19º Festival Internacional de Curtas de Belo Horizonte - Fest Curtas - Mostra Juventudes ","1º FestUniBrasilia - 50º Festival de Brasília do Cinema Brasileiro ","Film Africa 2017 ","11ª Mostra Curta Audiovisual","16ª Mostra de Audiovisual Universitário América Latina UFMT ","Mostra Cine Diversidade - gênero e sexualidade no cinema","Festival Deu Na Telha","CUMEmostra ","Festival Primeiro Plano - Mostra Competitiva Mercocidades ","Visões Periféricas ","Lumiar 4º Festival Interamericano de Cinema Universitário","X Janela Internacional de Cinema do Recife","20º FanCineGay - Festival Internacional de Cine LGBT de Extremadura ","XIII Panorama Internacional Coisa de Cinema","24º Festival Mix Brasil ", "IV Festissauro - Festival de Cinema de Sousa ","XII Cinefest Gato Preto - Mostra Protagonistas Negros ","MIRA IV - Festival de Cine Latinoamericano Independiente","III Egbé - Mostra de Cinema Negro","4ª Mostra Curtas Premiados ","I Mostra Itinerante de Cinema Negro Mahomed Bamba (MIMB)","Traços - Arte, Cultura e Negritudes - Escola SESC",
+        "festivais": ["Prêmio Elipse 2016","2º Toró Festival Audiovisual Universitário de Belém (Melhor Filme)","1º CORTE Festival (Melhor Montagem)","20º Curta Taquary (Melhor Montagem e Melhor Direção de Arte)"," 28º Festival Internacional de Curtas-Metragens de São Paulo (10 Melhores - Voto Popular)","16ª Mostra de Audiovisual Universitário América Latina UFMT (16MAUAL) (Prêmio Especial do Júri)","Melhor Montagem na Competitiva Nacional e Menção Honrosa pelo Júri do Janela Crítica - X Janela Internacional de Cinema do Recife","X Janela Internacional de Cinema do Recife (Melhor Montagem na Competitiva Nacional e Menção Honrosa pelo Júri do Janela Crítica)","V Recifest: Festival de Cinema da Diversidade Sexual e de Gênero  (Melhor curta nacional pelo Júri Popular e Melhor curta dirigido por homem pelo Júri ABD-PE/APECI)"," Mostra Fronteiras Imaginárias do Festival Visões Periféricas (Menção Honrosa)", "16ª Goiânia Mostra Curtas","Cine Tamoio","FLõ - Festival do Livre Olhar ","Mostra do Filme Livre ","Mostra Outros Cinemas","2º Cinemão / Mostra dxs Bi, das Gay, dxs Trans e das Sapatão","Mostra de Curtas de Ficção da Semana de Imagem e Som 2017 ","Concordia Film Festival ","14ª MIFEC - Mostra Internacional de Filmes de Escolas de Cinema","Encontro de Cinema Negro Zózimo Bulbul - Brasil, África e Caribe ","Korea Queer Film Festival (KQFF)","2ª Mostra Pequi de Audiovisual ","11ª Mostra Audiovisual de Cambuquira ","28º Festival Internacional de Curtas Metragens de São Paulo - Mostra Brasil ","7º Cinecipó – Festival Internacional do Filme Insurgente","19º Festival Internacional de Curtas de Belo Horizonte - Fest Curtas - Mostra Juventudes ","1º FestUniBrasilia - 50º Festival de Brasília do Cinema Brasileiro ","Film Africa 2017 ","11ª Mostra Curta Audiovisual","16ª Mostra de Audiovisual Universitário América Latina UFMT ","Mostra Cine Diversidade - gênero e sexualidade no cinema","Festival Deu Na Telha","CUMEmostra ","Festival Primeiro Plano - Mostra Competitiva Mercocidades ","Lumiar 4º Festival Interamericano de Cinema Universitário","X Janela Internacional de Cinema do Recife","20º FanCineGay - Festival Internacional de Cine LGBT de Extremadura ","XIII Panorama Internacional Coisa de Cinema","24º Festival Mix Brasil ", "IV Festissauro - Festival de Cinema de Sousa ","XII Cinefest Gato Preto - Mostra Protagonistas Negros ",
+        "MIRA IV - Festival de Cine Latinoamericano Independiente","III Egbé - Mostra de Cinema Negro","4ª Mostra Curtas Premiados ","I Mostra Itinerante de Cinema Negro Mahomed Bamba (MIMB)","Traços - Arte, Cultura e Negritudes - Escola SESC",
         "6ª Mostra de Curtas Araçá ","Afro-Latino Fest of New York","Festival Sai da Rede 2018","Corpos Dissidentes - Mostra de Cinema Queer de Curitiba","Festival de Cinema de Três Passos"],
         "galeria": ["/filmes/pele/galeria/1.jpg", "/filmes/pele/galeria/2.jpg", "/filmes/pele/galeria/3.jpg", "/filmes/pele/galeria/4.jpg", "/filmes/pele/galeria/5.jpg"]
 

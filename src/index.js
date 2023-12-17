@@ -12,7 +12,6 @@ import AppEn from './components/AppEn';
 import ProdutoraEn from './components/ProdutoraEn';
 import FilmesEn from './components/FilmesEn';
 import ContatoEn from './components/ContatoEn';
-import ProjetosEn from './components/ProjetosEn';
 import FilmeRealizadoEn from './components/FilmeRealizadoEn';
 import {store, persistor} from './store.js';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -30,9 +29,8 @@ ReactDOM.render(
           <Route path="/filmes" element={<Filmes />}></Route>
           <Route path="/filmes/en" element={<FilmesEn />}></Route>
           <Route path="/filmes/:id" element={<FilmeRealizado />}></Route>
-          <Route path="/filmes/en/:id" element={<FilmeRealizadoEn />}></Route>
+          <Route path="/filmes/:id/en" element={<FilmeRealizadoEn />}></Route>
           <Route path="/projetos" element={<Projetos />}></Route>
-          <Route path="/projetos/en" element={<ProjetosEn />}></Route>
           <Route path="/produtora" element={<Produtora />}></Route>
           <Route path="/produtora/en" element={<ProdutoraEn />}></Route>
           <Route path="/contato" element={<Contato />}></Route>

@@ -72,7 +72,7 @@ function FilmeRealizado(props) {
           <Row>
             <Col md={5}>
               <div className='filme__info'>
-                <h1 className='filme__info__title'>{filme.nome}</h1>
+                <h1 className='filme__info__title'>{filme.nome_en}</h1>
                 <h2 className='filme__info__subtitle'>Year</h2>
                 <h2 className='filme__info__text'>{filme.ano}</h2>
                 <h2 className='filme__info__subtitle'>Duration</h2>

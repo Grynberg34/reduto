@@ -45,10 +45,10 @@ function Filmes(props) {
             { filmes.map( (filme) => 
 
               <Col className='' md={6} key={filme.id}>
-                <Link to={`/filmes/en/${filme.uri}`}>
+                <Link to={`/filmes/${filme.uri}/en`}>
                 
                   <div className='filmes__filme'>
-                    <h1 className='filmes__filme__title'>{filme.nome}</h1>
+                    <h1 className='filmes__filme__title'>{filme.nome_en}</h1>
                     <video className='filmes__filme__video' autoPlay loop muted playsInline disableRemotePlayback  src={filme.video_capa}></video>
                     <div className='filmes__filme__info'>
                       <h2 className='filmes__filme__info__title'>{filme.ano}</h2>

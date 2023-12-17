@@ -46,17 +46,15 @@
     .menuMobile__content {
         position: relative;
         padding: 1vw;
-        background-color: $cinza-claro;
+        background-color: $preto;
         z-index: 99;
         border: 3px solid $bege;
-        border-width: 4px 4px 4px 5px;
-        border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
 
         .menuMobile__content__link {
             display: block;
             position: relative;
             font-size: 14px;
-            color: $preto;
+            color: $bege;
             font-weight: 800;
             padding-bottom: 2vw;
             text-decoration: none;
