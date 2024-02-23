@@ -36,8 +36,8 @@ const filmes = [
         },
         "ficha_técnica_en": {
             "Cast": "Raquel Paixão, Leonardo Castro, Silvana Stein, André Pacheco, Indira Nascimento, Valéria Lima, Ítalo Pereira, and Layza Griot",
-            "Director": "Bruno Ribeiro",
-            "Script": "Bruno Ribeiro and Tuanny Medeiros",
+            "Directed by": "Bruno Ribeiro",
+            "Written by": "Bruno Ribeiro and Tuanny Medeiros",
             "Executive Production": "Laís Diel",
             "Assistant Director": "Carla Villa-Lobos",
             "Production Direction": "Laís Diel and Julia Monnerat",
@@ -88,7 +88,7 @@ const filmes = [
         },
         "ficha_técnica_en": {
             "Cast": "Bruno Ribeiro, Dona Graça, Gabriela Montoni, Gustavo Andrade, Lucas Fratini, and Tuanny Medeiros",
-            "Direction and Screenplay": "Bruno Ribeiro",
+            "Directed and written by": "Bruno Ribeiro",
             "Executive Production": "Laís Diel",
             "Assistant Directors": "Lucas Fratini and Tuanny Medeiros",
             "Production Direction": "Adler Costa, Bruno Ribeiro, and Laís Diel",
@@ -141,7 +141,7 @@ const filmes = [
         },
         "ficha_técnica_en": {
             "Cast": "Dandara Vital, Johi Farias, Kamyla Galdeano, Kastelany Silva, Leona Kalí, Luciana Vasconcellos, and Mia",
-            "Direction_and_screenplay": "Bruno Ribeiro",
+            "Directed and written by": "Bruno Ribeiro",
             "Executive Production": "Laís Diel",
             "Assistant Director": "Victor Rodrigues",
             "Continuity": "Mariana Moron",
@@ -199,7 +199,7 @@ const filmes = [
         },
         "ficha_técnica_en": {
             "Cast": "André Muniz, Diego Francisco, and Fernanda Dias",
-            "Direction and Screenplay": "Bruno Ribeiro",
+            "Directed and written by": "Bruno Ribeiro",
             "Executive Production": "Laís Diel",
             "Assistant Director": "Mariana de Melo",
             "Continuity": "Gabriela Coelho",
