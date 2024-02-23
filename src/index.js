@@ -6,6 +6,9 @@ import App from './components/App';
 import Filmes from './components/Filmes';
 import FilmeRealizado from './components/FilmeRealizado';
 import Projetos from './components/Projetos';
+import ProjetosEn from './components/ProjetosEn';
+import Projeto from './components/Projeto';
+import ProjetoEn from './components/ProjetoEn';
 import Produtora from './components/Produtora';
 import Contato from './components/Contato';
 import AppEn from './components/AppEn';
@@ -31,6 +34,9 @@ ReactDOM.render(
           <Route path="/filmes/:id" element={<FilmeRealizado />}></Route>
           <Route path="/filmes/:id/en" element={<FilmeRealizadoEn />}></Route>
           <Route path="/projetos" element={<Projetos />}></Route>
+          <Route path="/projetos/en" element={<ProjetosEn />}></Route>
+          <Route path="/projetos/:id" element={<Projeto />}></Route>
+          <Route path="/projetos/:id/en" element={<ProjetoEn />}></Route>
           <Route path="/produtora" element={<Produtora />}></Route>
           <Route path="/produtora/en" element={<ProdutoraEn />}></Route>
           <Route path="/contato" element={<Contato />}></Route>

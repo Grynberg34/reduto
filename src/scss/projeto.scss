@@ -1,0 +1,240 @@
+@import '../scss/colors.scss';
+@import '../scss/font.scss';
+@import '../scss/animations.scss';
+
+#projeto {
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: $preto;
+    background-size: cover;
+}
+
+.projeto {
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    .projeto__info {
+        margin-top: 15vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 8vw;
+        position: sticky;
+        top: 4vw;
+
+        .projeto__info__title {
+            font-size: 44px;
+            color: $bege;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 2vw;
+        }
+
+        .projeto__info__subtitle {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $cinza-claro;
+            line-height: 2;
+            margin-bottom: 0;
+        }
+
+        .projeto__info__text {
+            font-size: 18px;
+            color: $bege;
+            font-weight: 400;
+            margin-bottom: 2vw;
+            line-height: 2;
+        }
+
+    }
+
+    .projeto__content{
+        margin-top: 20vw;
+        margin-bottom: 8vw;
+
+        .projeto__content__img {
+            width: 100%;
+        }
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.azul {
+    color: $cinza-claro;
+    font-weight: 700;
+}
+
+.modal {
+
+    .modal__img {
+        width: 100%;
+    }
+
+    .modal__close {
+        display: block;
+        margin-top: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+        color: $bege;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background: none;
+        border: none;
+
+        &:hover {
+            color: $cinza-claro;
+        }
+    }
+
+    .modal__option {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: $cinza-claro;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background: none;
+        border: none;
+        margin-top: 1vw;
+        cursor: pointer;
+
+        &:hover {
+            color: $cinza-claro;
+        }
+
+        .modal__right {
+            display: block;
+            transform: scaleX(-1);
+        }
+    }
+
+}
+
+.modal-content {
+    margin-top: 10vw;
+    background-color:none !important;
+    background: none !important;
+    border: none;
+
+}
+
+.modal.show .modal-dialog {
+    min-width: 44vw;
+}
+
+.modal-backdrop.show {
+    opacity: 0.9 !important;
+}
+
+
+@media only screen and (max-width:767px) {
+
+    .projeto {
+        padding-top: 60vw;
+        background-position: 50%;
+
+        .projeto__info {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            border-right: none;
+            margin-bottom: 30vw;
+
+            .projeto__info__title {
+                font-size: 40px;
+                margin-bottom: 10vw;
+                line-height: 1.5;
+                text-align: center;
+            }
+
+            .projeto__info__text {
+                font-size: 16px;
+                margin-bottom: 6vw;
+            }
+        }
+
+        .projeto__content {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            display: none;
+
+        }
+
+    }    
+
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1399px) {
+
+    .projeto {
+        .projeto__info {
+
+            .projeto__info__title {
+                font-size: 30px;
+            }
+
+            .projeto__info__subtitle {
+                font-size: 20px;
+            }
+
+            .projeto__info__text {
+                font-size: 14px;
+            }
+        }
+
+        .projeto__content {
+
+            .projeto__content__trailer {
+                .projeto__content__trailer__title {
+                    font-size: 26px;
+                }
+            }
+
+            .projeto__content__ficha {
+                .projeto__content__ficha__title {
+                    font-size: 26px;
+                }
+
+                .projeto__content__ficha__list {
+                    .projeto__content__ficha__list__option {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .projeto__content__festivais {
+                .projeto__content__festivais__title {
+                    font-size: 26px;
+
+                }
+
+                .projeto__content__festivais__list {
+                    .projeto__content__festivais__list__option {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .projeto__content__galeria {
+                .projeto__content__galeria__title {
+                    font-size: 26px;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media only screen and (min-width:1400px) and (max-width:1700px) {
+
+
+
+}

@@ -7,16 +7,14 @@ import "../scss/projetos.scss";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Menu from './Menu';
-import MenuMobile from './MenuMobile';
+import Menu from './MenuEn';
+import MenuMobile from './MenuMobileEn';
 
-function Projetos(props) {
+function ProjetosEn(props) {
 
   var projetos = props.projetos;
 
   var numbers = props.numbers;
-
-  console.log(projetos, numbers);
 
   if (projetos === null) {
     store.dispatch(GetProjetos())
@@ -38,7 +36,7 @@ function Projetos(props) {
         <MenuMobile></MenuMobile>
 
 
-        <div className='projetos'>
+        <div className='projetos '>
 
         <Container fluid>
 
@@ -47,10 +45,10 @@ function Projetos(props) {
             { projetos.map( (projeto) => 
 
               <Col className='' md={6} key={projeto.id}>
-                <Link to={`/projetos/${projeto.uri}`}>
+                <Link to={`/projetos/${projeto.uri}/en`}>
                 
                   <div className='projetos__projeto'>
-                    <h1 className='projetos__projeto__title'>{projeto.título}</h1>
+                    <h1 className='projetos__projeto__title'>{projeto.titulo_en}</h1>
                     <img className='projetos__projeto__img' src={projeto.imagem_capa} alt="" />
                     <div className='projetos__projeto__info'>
                       <h2 className='projetos__projeto__info__title'>{projeto.ano}</h2>
@@ -88,4 +86,4 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps
-)(Projetos);
+)(ProjetosEn);

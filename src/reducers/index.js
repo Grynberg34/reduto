@@ -80,7 +80,7 @@ const getProjetosReducer = (projetos= null, action) => {
     return projetos;
 };
 
-const getProjetoIdReducer = (projeto= 0, action) => {
+const getProjetoIdReducer = (projeto= null, action) => {
     if (action.type === 'GET_PROJETO_ID') {
 
         return action.payload;

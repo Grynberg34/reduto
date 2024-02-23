@@ -5,7 +5,7 @@ import produtora from "../produtora";
 export const GetNumbers = () => async dispatch => {
 
   function getRandomNumber(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   const numbers = [];
@@ -60,8 +60,10 @@ export const GetProjetos = () => async dispatch => {
 };
 
 
-export const GetProjetoId = (index) => async dispatch => {
+export const GetProjetoId = (uri) => async dispatch => {
 
-  dispatch({ type: 'GET_PROJETO_ID', payload: index});
+  var projeto = projetos.find(x => x.uri === uri);
+
+  dispatch({ type: 'GET_PROJETO_ID', payload: projeto});
 
 };
