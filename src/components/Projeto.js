@@ -46,7 +46,7 @@ function Projeto(props) {
                 {
                   projeto.fomento !== null?
                   <div>
-                    <h2 className='projeto__info__subtitle'>Fomento</h2>
+                    <h2 className='projeto__info__subtitle'>Financiamento</h2>
                     <h2 className='projeto__info__text'>{projeto.fomento}</h2>
                   </div>
                   :null
