@@ -39,7 +39,7 @@ function Projeto(props) {
                 <h2 className='projeto__info__text'>{projeto.tipo_en}</h2>
                 <h2 className='projeto__info__subtitle'>Directed by</h2>
                 <h2 className='projeto__info__text'>{projeto.direção}</h2>
-                <h2 className='projeto__info__subtitle'>Screenplay</h2>
+                <h2 className='projeto__info__subtitle'>Written by</h2>
                 <h2 className='projeto__info__text'>{projeto.roteiro}</h2>
                 <h2 className='projeto__info__subtitle'>Logline</h2>
                 <h2 className='projeto__info__text'>{projeto.logline_en}</h2>
