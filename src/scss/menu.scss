@@ -115,7 +115,20 @@
         .menu__language {
 
             .menu__language__link {
-                font-size: 12px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+
+    #menu {
+        .menu__language {
+
+            .menu__language__link {
+                font-size: 10px;
             }
         }
     }
